@@ -28,7 +28,7 @@ const SLIDES = [
     tag: 'Taller de Prevención',
     title: 'LO QUE NO VES',
     subtitle: 'CUANDO VAPEAS',
-    image: '/src/assets/images/vape_cover_background_1779095587667.png',
+    image: './src/assets/images/vape_cover_background_1779095587667.png',
     action: true,
     description: 'Un taller para ver lo invisible, entender lo que nadie explica y decidir con información real.',
     stats: [
@@ -42,7 +42,7 @@ const SLIDES = [
     type: 'split',
     eyebrow: 'Para empezar',
     title: '¿SABÉIS QUÉ ES ESTO?',
-    image: '/src/assets/images/realistic_vape_product_commercial_1779100953113.png',
+    image: './src/assets/images/realistic_vape_product_commercial_1779100953113.png',
     questions: [
       '¿Habéis visto alguno antes? ¿Dónde?',
       '¿Sabéis cómo funciona por dentro?',
