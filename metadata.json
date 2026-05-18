@@ -1,0 +1,8 @@
+{
+  "name": "Lo que no ves al vapear",
+  "description": "Taller interactivo de prevención sobre los riesgos del vapeo para adolescentes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

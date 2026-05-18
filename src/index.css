@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bebas Neue", sans-serif;
+
+  --color-brand-black: #0A0A0A;
+  --color-brand-cream: #F2EDE4;
+  --color-brand-red: #D92B2B;
+  --color-brand-red-dark: #A01E1E;
+  --color-brand-gray: #1C1C1C;
+  --color-brand-gray-light: #2A2A2A;
+  --color-brand-yellow: #F0C040;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-brand-cream font-sans overflow-hidden antialiased select-none;
+  }
+}
+
+.markdown-body {
+  @apply text-brand-cream leading-relaxed;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-brand-red/30 rounded-full;
+}
+
+@layer components {
+  .presentation-wrapper {
+    @apply w-screen h-screen overflow-hidden flex items-center justify-center bg-brand-black;
+  }
+
+  .slide-canvas {
+    @apply relative overflow-hidden bg-brand-black shadow-2xl;
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+    aspect-ratio: 16 / 9;
+  }
+
+  .interactive-element {
+    @apply cursor-pointer select-none active:scale-[0.98] transition-transform duration-200;
+  }
+}

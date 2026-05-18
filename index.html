@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lo que no ves al vapear</title>
+    <script>
+      (function() {
+        // Prevent polyfills from crashing by trying to overwrite read-only globals
+        try {
+          var originalFetch = window.fetch;
+          var guard = {
+            configurable: true,
+            enumerable: true,
+            get: function() { return originalFetch; },
+            set: function() { console.warn('Blocked fetch overwrite'); }
+          };
+          
+          // Try to define on window instance
+          try { Object.defineProperty(window, 'fetch', guard); } catch (e) {}
+          
+          // Also try Window.prototype to catch fall-through assignments
+          try { Object.defineProperty(Window.prototype, 'fetch', guard); } catch (e) {}
+        } catch (e) {}
+
+        // Ensure FormData looks like it has full support to prevent formdata-polyfill from running
+        try {
+          if (typeof FormData !== 'undefined' && !FormData.prototype.keys) {
+            var noop = function*() {};
+            FormData.prototype.keys = noop;
+            FormData.prototype.entries = noop;
+            FormData.prototype.values = noop;
+            FormData.prototype.delete = function() {};
+            FormData.prototype.has = function() { return false; };
+            FormData.prototype.set = function() {};
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
