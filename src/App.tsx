@@ -124,7 +124,7 @@ const SLIDES = [
     image: '/images/slide8.png',
     description: 'Todo lo que retiene el filtro del cigarrillo... en el vaper va directamente a tus pulmones.',
     images: [
-      { src: '/src/assets/images/vape_filter_comparison_1779096021548.png', label: 'ANÁLISIS DE RESIDUOS' }
+      { src: '/images/vape_filter_comparison_1779096021548.png', label: 'ANÁLISIS DE RESIDUOS' }
     ]
   },
   {
@@ -398,7 +398,7 @@ const SlideContent: React.FC<{ slide: typeof SLIDES[0], index: number }> = ({ sl
           <div className="flex flex-col items-center">
               <div className="w-[min(22vw,280px)] aspect-[3/4] bg-brand-black rounded-sm shadow-2xl relative overflow-hidden ring-1 ring-white/20 group cursor-zoom-in">
                   <img 
-                    src="/src/assets/images/vape_label_realistic_1779100291699.png" 
+                    src="/images/vape_label_realistic_1779100291699.png" 
                     alt="Realistic Vaper Label" 
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer"
