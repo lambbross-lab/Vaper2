@@ -42,7 +42,7 @@ const SLIDES = [
     type: 'split',
     eyebrow: 'Para empezar',
     title: '¿SABÉIS QUÉ ES ESTO?',
-    image: './src/assets/images/realistic_vape_product_commercial_1779100953113.png',
+    image: './src/assets/images/slide1.png',
     questions: [
       '¿Habéis visto alguno antes? ¿Dónde?',
       '¿Sabéis cómo funciona por dentro?',
