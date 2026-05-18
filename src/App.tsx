@@ -55,7 +55,7 @@ const SLIDES = [
     type: 'split',
     eyebrow: 'Lo que hace la industria',
     title: 'ASÍ FUNCIONA EL MARKETING',
-    image: '/images/vape_marketing_truth_1779095988797.png',
+    image: '/images/slide3.png',
     questions: [
       '«Solo es vapor de agua, no hace daño»',
       '«No tiene nicotina» — ¿seguro?',
@@ -69,7 +69,7 @@ const SLIDES = [
     type: 'split',
     eyebrow: 'La trampa del diseño',
     title: 'DISEÑADO PARA CAER EN LA TENTACIÓN',
-    image: '/images/vape_design_candy_1779096006100.png',
+    image: '/images/slide4.png',
     questions: [
       'Sabores a fresa, sandía, algodón de azúcar...',
       'Colores llamativos. Formato pequeño y discreto.',
@@ -94,7 +94,7 @@ const SLIDES = [
     id: 'label',
     type: 'interactive-label',
     title: 'LA ETIQUETA QUE NO ENTIENDES',
-    image: '/images/vape_label_ingredients_1779096050863.png',
+    image: '/images/slide6.png',
     description: 'Los vapers suelen ocultar sus ingredientes reales bajo nombres complejos o en letras minúsculas diseñadas para no ser leídas.',
     ingredients: [
       { name: 'Propilenoglicol', real: 'Gas de máquinas de humo / Anticongelante', risk: 'Irritación pulmonar severa' },
@@ -121,7 +121,7 @@ const SLIDES = [
     id: 'filter',
     type: 'comparison',
     title: 'EL CIGARRILLO TIENE FILTRO. EL VAPER, NO.',
-    image: '/images/vape_filter_comparison_1779096021548.png',
+    image: '/images/slide8.png',
     description: 'Todo lo que retiene el filtro del cigarrillo... en el vaper va directamente a tus pulmones.',
     images: [
       { src: '/src/assets/images/vape_filter_comparison_1779096021548.png', label: 'ANÁLISIS DE RESIDUOS' }
