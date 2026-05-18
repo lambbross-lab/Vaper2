@@ -28,7 +28,7 @@ const SLIDES = [
     tag: 'Taller de Prevención',
     title: 'LO QUE NO VES',
     subtitle: 'CUANDO VAPEAS',
-    image: './src/assets/images/vape_cover_background_1779095587667.png',
+    image: '/images/vape_cover_background_1779095587667.png',
     action: true,
     description: 'Un taller para ver lo invisible, entender lo que nadie explica y decidir con información real.',
     stats: [
@@ -42,7 +42,7 @@ const SLIDES = [
     type: 'split',
     eyebrow: 'Para empezar',
     title: '¿SABÉIS QUÉ ES ESTO?',
-    image: './src/assets/images/slide1.png',
+    image: '/images/slide1.png',
     questions: [
       '¿Habéis visto alguno antes? ¿Dónde?',
       '¿Sabéis cómo funciona por dentro?',
@@ -55,7 +55,7 @@ const SLIDES = [
     type: 'split',
     eyebrow: 'Lo que hace la industria',
     title: 'ASÍ FUNCIONA EL MARKETING',
-    image: '/src/assets/images/vape_marketing_truth_1779095988797.png',
+    image: '/images/vape_marketing_truth_1779095988797.png',
     questions: [
       '«Solo es vapor de agua, no hace daño»',
       '«No tiene nicotina» — ¿seguro?',
@@ -69,7 +69,7 @@ const SLIDES = [
     type: 'split',
     eyebrow: 'La trampa del diseño',
     title: 'DISEÑADO PARA CAER EN LA TENTACIÓN',
-    image: '/src/assets/images/vape_design_candy_1779096006100.png',
+    image: '/images/vape_design_candy_1779096006100.png',
     questions: [
       'Sabores a fresa, sandía, algodón de azúcar...',
       'Colores llamativos. Formato pequeño y discreto.',
@@ -81,7 +81,7 @@ const SLIDES = [
     type: 'hero-dark',
     title: 'HOY NO VAMOS A HABLAR DE SABORES.',
     subtitle: 'VAMOS A HABLAR DE LO QUE ESCONDEN.',
-    image: '/src/assets/images/vape_intro_recon_1779095971985.png',
+    image: '/images/vape_intro_recon_1779095971985.png',
     description: 'Lo que la industria no te cuenta. Lo que no está en la etiqueta. Lo que pasa dentro de tu cuerpo.',
     questions: [
       '¿Sabéis qué son las sales de nicotina?',
@@ -94,7 +94,7 @@ const SLIDES = [
     id: 'label',
     type: 'interactive-label',
     title: 'LA ETIQUETA QUE NO ENTIENDES',
-    image: '/src/assets/images/vape_label_ingredients_1779096050863.png',
+    image: '/images/vape_label_ingredients_1779096050863.png',
     description: 'Los vapers suelen ocultar sus ingredientes reales bajo nombres complejos o en letras minúsculas diseñadas para no ser leídas.',
     ingredients: [
       { name: 'Propilenoglicol', real: 'Gas de máquinas de humo / Anticongelante', risk: 'Irritación pulmonar severa' },
@@ -109,7 +109,7 @@ const SLIDES = [
     id: 'instructions',
     type: 'steps',
     title: 'TRES PASOS PARA DESCIFRARLA',
-    image: '/src/assets/images/vape_label_ingredients_1779096050863.png',
+    image: '/images/vape_label_ingredients_1779096050863.png',
     steps: [
       { n: '1', title: '🔍 LEED LA ETIQUETA', text: 'Observad ingredientes, sabores y detalles que normalmente pasarían desapercibidos.', icon: '🔍' },
       { n: '2', title: '🧪 DESCIFRAD CADA INGREDIENTE', text: 'Usad la ficha para descubrir qué es cada sustancia y qué función tiene.', icon: '🧪' },
@@ -121,7 +121,7 @@ const SLIDES = [
     id: 'filter',
     type: 'comparison',
     title: 'EL CIGARRILLO TIENE FILTRO. EL VAPER, NO.',
-    image: '/src/assets/images/vape_filter_comparison_1779096021548.png',
+    image: '/images/vape_filter_comparison_1779096021548.png',
     description: 'Todo lo que retiene el filtro del cigarrillo... en el vaper va directamente a tus pulmones.',
     images: [
       { src: '/src/assets/images/vape_filter_comparison_1779096021548.png', label: 'ANÁLISIS DE RESIDUOS' }
@@ -131,7 +131,7 @@ const SLIDES = [
     id: 'quiz',
     type: 'quiz',
     title: 'LOS NÚMEROS NO MIENTEN',
-    image: '/src/assets/images/workshop_abstract_bg_1779095692750.png',
+    image: '/images/workshop_abstract_bg_1779095692750.png',
     subtitle: 'Haz clic en cada pregunta para revelar el dato real',
     items: [
       { q: '¿Cuántas caladas tiene un vaper desechable estándar?', a: '600 CALADAS', detail: 'Equivale a entre 15 y 20 cigarrillos.' },
@@ -144,7 +144,7 @@ const SLIDES = [
     id: 'stats-final',
     type: 'stats',
     title: 'DATOS CLAVE',
-    image: '/src/assets/images/workshop_abstract_bg_1779095692750.png',
+    image: '/images/workshop_abstract_bg_1779095692750.png',
     stats: [
       { value: '34,5%', label: 'Jóvenes 14-18 años', desc: 'Lo han probado al menos una vez.', source: 'ESTUDES 2022' },
       { value: '50 mg', label: 'Concentración Nicotina', desc: 'Frente a ~1,5 mg de un cigarrillo.', source: 'FDA' },
@@ -157,7 +157,7 @@ const SLIDES = [
     type: 'reflection',
     title: 'YA HAS VISTO LO QUE NO SE VE.',
     subtitle: 'LA PRÓXIMA DECISIÓN ES TUYA.',
-    image: '/src/assets/images/workshop_abstract_bg_1779095692750.png',
+    image: '/images/workshop_abstract_bg_1779095692750.png',
     description: 'La publicidad vende sabores.\nLas etiquetas suelen ocultar la complejidad.\nTomad decisiones con información completa.',
     footer: 'Gracias por participar'
   }
